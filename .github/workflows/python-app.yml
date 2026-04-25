@@ -29,7 +29,8 @@ jobs:
     - name: Lint with flake8
       run: |
         pip install flake8
-        # Detiene la ejecución si hay errores de sintaxis de Python o símbolos indefinidos
+        # Solo revisamos errores de sintaxis críticos (E9, F63, F7, F82)
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-        # Avisos de estilo (opcional, no detiene el proceso)
-        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+        # Los demás errores los ignoramos para que el check salga VERDE
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics- name: Lint with flake8
+     
