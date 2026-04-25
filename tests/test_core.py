@@ -1,4 +1,3 @@
-# tests/test_core.py
 import pytest
 
 def test_placeholder():
