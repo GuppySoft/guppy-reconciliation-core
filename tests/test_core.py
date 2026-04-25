@@ -1,4 +1,3 @@
-
 import pytest
 
 from reconciliation_core import _obtener_o_crear_sucursal 
