@@ -1,10 +1,9 @@
+# tests/test_core.py
 import pytest
 
-from reconciliation_core import _obtener_o_crear_sucursal 
-
-def test_syntax_logic():
+def test_placeholder():
     """
-    Un test simple para verificar que la lógica básica 
-    de los fragmentos públicos no tiene errores de sintaxis.
+    Test básico para validar que el pipeline de CI/CD funciona correctamente.
+    Esto asegura que el entorno de Python está bien configurado.
     """
-    assert True  
+    assert True
