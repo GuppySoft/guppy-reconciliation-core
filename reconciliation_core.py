@@ -1,3 +1,22 @@
+import io
+import pandas as pd
+from sqlalchemy.exc import IntegrityError
+
+class Sucursal:
+    """Clase espejo para demostración de arquitectura."""
+    id = None
+    def __init__(self, **kwargs): pass
+
+def extract_and_filter_tables_from_pdf(archivo, columns_to_keep):
+    """Placeholder para utilidad de lectura de PDF."""
+    return []
+
+def convertir_a_numero(valor):
+    """Placeholder para utilidad de conversión de moneda."""
+    return 0.0
+
+datos_para_df = []
+
 def _obtener_o_crear_sucursal(session, nombre_sucursal, mapa_sucursales):
     """
     Busca una sucursal en el caché local o en la DB. 
