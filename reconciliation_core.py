@@ -23,12 +23,14 @@ def _obtener_o_crear_sucursal(session, nombre_sucursal, mapa_sucursales):
         mapa_sucursales[nombre_limpio] = nueva_sucursal.id
         return nueva_sucursal.id
     except IntegrityError:
-        # Fallback de seguridad: Si otro proceso la creó un milisegundo antes
+        
         session.rollback() 
         sucursal_existente = session.query(Sucursal).filter_by(nombre=nombre_limpio).first()
+        
         if sucursal_existente:
-        return sucursal_existente.id
-    raise ValueError("No se encontró la sucursal y no se pudo crear.")
+            return sucursal_existente.id
+            
+        raise ValueError("No se encontró la sucursal y no se pudo crear.")
 
 
 def procesar_liquidacion_pdf(lista_archivos_pdf):
