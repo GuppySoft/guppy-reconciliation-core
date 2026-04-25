@@ -1,6 +1,6 @@
 # guppy-reconciliation-core
 # 🦊 GuppySoft: Fintech Reconciliation Engine (Core Demo)
-
+[![Build Status](https://github.com/GuppySoft/guppy-reconciliation-core/actions/workflows/python-app.yml/badge.svg)](https://github.com/GuppySoft/guppy-reconciliation-core/actions/workflows/python-app.yml)
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![Flask](https://img.shields.io/badge/Framework-Flask-lightgrey.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
